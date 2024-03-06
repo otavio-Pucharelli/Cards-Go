@@ -11,6 +11,9 @@ func main() {
 
 	cards := newDeckFromFile("my_cards")
 	cards.shuffle()
-	deal(cards, 5)
-	cards.print()
+	ha, rem := deal(cards, 5)
+
+	ha.print()
+	rem.print()
+
 }
